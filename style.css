@@ -151,7 +151,7 @@ nav a>i:hover{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 1.8rem;
+    gap: 1.8em;
 }
 
 .posts{
@@ -306,8 +306,12 @@ cursor: pointer;
 }
 
 
-@media screen and (max-width:414px){
+@media screen and (max-width:420px){
     
+    .posts{
+        width: 75%;
+    }
+
     .buscar input{
         width: 45px;
     }
