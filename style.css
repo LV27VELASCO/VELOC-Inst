@@ -24,9 +24,8 @@ h1,h2,h3,h4{
 .H-hero{
     background-color: #320b5a;
     width: 100vw;
-    height: 4.1rem;
+    height: 4.1em;
     margin: 0;
-    padding-top: 0.4rem;
     position:sticky;
     top: 0;
 }
@@ -101,7 +100,7 @@ input::placeholder{
 
 .iteracion{
     display: flex;
-    gap:2rem;
+    gap:2em;
 }
 
 .iteracion nav{
@@ -156,7 +155,6 @@ nav a>i:hover{
 
 .posts{
     width: 45%;
-    height:31.875rem;
     box-shadow: 0px 0px 2px 1px #c285c9;
     background: rgb(241, 233, 233);
 }
@@ -247,20 +245,21 @@ cursor: pointer;
 }
 
 .bd-text{
-    display: flex;
-    align-items: center;
     gap:0.36em;
 }
 
 .bd-text h2{
+    padding-right: 0.5em;
     font-weight: bold;
     font-size: 0.9rem;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    display: inline;
 }
 
 .bd-text p{
     font-size: 0.9rem;
     font-family:sans-serif;
+    display: inline;
 }
 
 .pst-foot{
@@ -309,7 +308,12 @@ cursor: pointer;
 @media screen and (max-width:420px){
     
     .posts{
-        width: 88%;
+        width: 85%;
+    }
+
+    .iteracion{
+        display: flex;
+        gap:1.5em;
     }
 
     .buscar input{
