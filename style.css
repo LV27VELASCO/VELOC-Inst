@@ -309,7 +309,7 @@ cursor: pointer;
 @media screen and (max-width:420px){
     
     .posts{
-        width: 80%;
+        width: 88%;
     }
 
     .buscar input{
