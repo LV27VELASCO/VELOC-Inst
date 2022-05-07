@@ -5,7 +5,7 @@
 
 html{
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1rem;
     font-family:sans-serif;
 }
 
@@ -17,16 +17,16 @@ body{ margin: 0;
 padding: 0;}
 
 h1,h2,h3,h4{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .H-hero{
     background-color: #320b5a;
     width: 100vw;
-    height: 65px;
+    height: 4.1rem;
     margin: 0;
-    padding-top: 5px;
+    padding-top: 0.4rem;
     position:sticky;
     top: 0;
 }
@@ -34,7 +34,7 @@ h1,h2,h3,h4{
 .H-hero .container-hd{
     height: inherit;
     display: flex;
-    gap: 10px;
+    gap: 0.6rem;
     justify-content: space-evenly;
 }
 
@@ -50,7 +50,7 @@ h1,h2,h3,h4{
 }
 
 .container-hd h2{
-    margin-top:3px;
+    margin-top:0.06rem;
     color:whitesmoke;
     font-size:1.2rem;
     font-family: 'Times New Roman', Times, serif;
@@ -139,13 +139,15 @@ nav a>i:hover{
 /*ARRIBA EMPIEZAN TODOS LOS ELEMENTOS DEL ENCABEZADO*/
 /*ARRIBA EMPIEZAN TODOS LOS ELEMENTOS DEL ENCABEZADO*/
 
+.hero{
+    width: 100vw;
+}
 
-
-main .container-bd{
-    padding-top: 1.8rem;
+.hero .container-bd{
+    padding-top: 1rem;
     padding-bottom: 1rem;
     width: 100%;
-    height: 100hv;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -153,8 +155,8 @@ main .container-bd{
 }
 
 .posts{
-    width: 500px;
-    height: 500px;
+    width: 45%;
+    height:31.875rem;
     box-shadow: 0px 0px 2px 1px #c285c9;
     background: rgb(241, 233, 233);
 }
@@ -210,32 +212,54 @@ cursor: pointer;
 
 
 .pst-body{
-    width:inherit;
-    height:350px;
+    width:100%;
+    height:22rem;
 }
 
 .pst-body img{
     width:inherit;
-    height:350px;
+    height:inherit;
     object-fit: cover;
     object-position:center;
+}
+
+.container-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.625em;
+}
+
+.container-text .bd-text>*{
+    display: inline;
+}
+
+.container-text h2{
+    padding-left: 0.06em;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(35, 32, 32);
+}
+
+.container-text p{
+    font-family:'Lucida Sans Unicode', Verdana;
+    font-size: 0.9rem;
 }
 
 .bd-text{
     display: flex;
     align-items: center;
-    gap: 5px;
-    padding-bottom: 3px;
+    gap:0.36em;
 }
 
 .bd-text h2{
     font-weight: bold;
-    font-size: 15px;
+    font-size: 0.9rem;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .bd-text p{
-    font-size: 15px;
+    font-size: 0.9rem;
     font-family:sans-serif;
 }
 
@@ -244,8 +268,6 @@ cursor: pointer;
     align-items: center;
     justify-content: space-between;
     font-size: 1.4rem;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 .pst-foot i{
     
@@ -255,25 +277,13 @@ cursor: pointer;
 .i-foot{
     display: flex;
     align-items: center;
-    gap:15px;
+    gap:0.9em;
     font-size: 1.4rem;
     cursor: pointer;
 }
 
-.container-text{
-    padding: 8px;
-}
 
-.container-text h2{
-    font-size: 15px;
-    font-weight: 600;
-    color: rgb(35, 32, 32);
-}
 
-.container-text p{
-    font-family:'Lucida Sans Unicode', Verdana;
-    font-size: 15px;
-}
 
 .container-text span{
     font-size: 13px;
